@@ -4,7 +4,10 @@
     </head>
 
     <style>
-        *{margin: 0;padding: 0;box-sizing: border-box;}
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        
         body{
             background-color: #2f4050;
         }
@@ -16,10 +19,8 @@
             text-align: center;
         }
            
-
         form{
             background-color: white;
-            /*max-width: 300px;*/
             width: 30%;
             padding: 50px;
             position: absolute;
@@ -27,8 +28,6 @@
             top: 50%;
             transform: translate(-50%,-50%);
             border-radius: 7px;
-            /*style"margin:5px";*/
-          
         }
         form h3{
         	text-align: central;
@@ -48,29 +47,23 @@
             margin: 10px 0;
             text-align:center;
         }
-        .corFundoCampo {
+        .corFundoBotao {
             background-color: #55baec;    
             color: white;
             border: #55baec;
             border-radius: 7px;
 
             }
-        .corFundoSenha {
+        .corFundo {
             background-color: #f5f5f5; 
             border: #f5f5f5;
             border-radius: 7px;
             }
-        .corFundoUsuario {
-            background-color: #f5f5f5; 
-            border: #f5f5f5;
-            border-radius: 7px;
-            }    
         
         img { border-radius: 100%;}
         
-        
-
     </style>
+    
 <div>
     <body>
         <form>
@@ -81,11 +74,11 @@
                  <h3>Acesse sua conta</h3>
             </div>
             <div class="cabecalho">
-            <input class="corFundoUsuario" type="text" name="email" placeholder="usuário"/> 
+            <input class="corFundo" type="text" name="email" placeholder="usuário"/> 
           </div> 
-            <input class="corFundoSenha" type="password" name="senha" placeholder="senha"/>
+            <input class="corFundo" type="password" name="senha" placeholder="senha"/>
             <div>
-            <input class="corFundoCampo" type="submit" name="acao" value="Enviar" />
+            <input class="corFundoBotao" type="submit" name="acao" value="Enviar" />
             </div>
             <div class="footer">
                     <div class="cabecalho">    

@@ -5,16 +5,17 @@
 
     <style>
         *{
-            margin: 0;padding: 0;box-sizing: border-box;
+            margin: 5;padding: 0;box-sizing: border-box;
         }
         
         body{
             background-color: #2f4050;
         }
 
-        .cabecalho{
+        .alinhamentoCampo{
             text-align: center;
         }
+
         .login{
             text-align: center;
         }
@@ -37,12 +38,11 @@
 
         form input[type=text],
         form input[type=password],
-        form input[type=submit],
         form input[type=span]
         { 
         	width: 100%;
-        	height: 45px;
-            border: 1px solid #c0bfbf
+        	height: 55px;
+            border: 1px solid #f5f5f5;
             padding-left: 10px;
             margin: 10px 0;
             text-align:center;
@@ -50,9 +50,15 @@
         .corFundoBotao {
             background-color: #55baec;    
             color: white;
-            border: #55baec;
             border-radius: 7px;
+            margin-left: 10px;
+            margin-right: 10px;
 
+        	width: 80%;
+        	height: 45px;
+            border: 1px solid #c0bfbf;
+            padding-left: 10px;
+            text-align:center;
             }
         .corFundo {
             background-color: #f5f5f5; 
@@ -60,31 +66,48 @@
             border-radius: 7px;
             }
         
-        img { border-radius: 100%;}
+        img { 
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            }
         
+        .footer {
+            margin-top: 20px;
+            background-color: #eee;
+            border-width: 100%;
+            width: 100%;
+        }
     </style>
-    
+
 <div>
     <body>
         <form>
-            <div class="cabecalho">
+            <div class="alinhamentoCampo">
                 <div class="imagem">
                     <img src="agostinho.jpg" alt="some text" width=60 height=40>
                 </div>    
                  <h3>Acesse sua conta</h3>
             </div>
-            <div class="cabecalho">
-            <input class="corFundo" type="text" name="email" placeholder="usuário"/> 
-          </div> 
-            <input class="corFundo" type="password" name="senha" placeholder="senha"/>
-            <div>
-            <input class="corFundoBotao" type="submit" name="acao" value="Enviar" />
+            
+            <!--campos usuário e senha-->
+            <div class="alinhamentoCampo">
+                <input class="corFundo" type="text" name="email" placeholder="usuário"/> 
+                <input class="corFundo" type="password" name="senha" placeholder="senha"/>
             </div>
+
+            <!-- botão enviar-->
+            <div class="alinhamentoCampo">
+                <input class="corFundoBotao" type="submit" name="acao" value="Enviar" />
+            </div>
+
+            <!--este é o roda pé do login-->
             <div class="footer">
-                    <div class="cabecalho">    
-                <span>Esqueceu sua senha?</span>
-            </div>
+                <div class="alinhamentoCampo">    
+                    <span>Esqueceu sua senha?</span>
+                </div>
            </div>
+
         </form>
     </body>
 </div> 
